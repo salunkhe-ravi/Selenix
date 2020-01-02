@@ -10,22 +10,22 @@ import pageObjects.GoogleSearchPO;
 
 public class StepDefinitionTest {
 
-	private GoogleHomePO ghPO;
-	private GoogleSearchPO gsPO;
+	private GoogleHomePO googleHomePO;
+	private GoogleSearchPO googleSearchPO;
 	
 	public StepDefinitionTest(SharedDriver driver, GoogleHomePO ghPO, GoogleSearchPO gsPO) {
-		this.ghPO = ghPO;
-		this.gsPO = gsPO;
+		this.googleHomePO = ghPO;
+		this.googleSearchPO = gsPO;
 	}
 	
 	@Given("Go to google page")
 	public void given() {
-		ghPO.get();
+		googleHomePO.get();
 	}
 	
 	@When("Enter search {string}")
 	public void when(String search) {
-		gsPO = ghPO.performSearch(search);
-		System.out.format("\nCount results for %s search is %s.\n", search, gsPO.searchResultCount());
+		googleSearchPO = googleHomePO.performSearch(search);
+		System.out.format("\nCount results for %s search is %s.\n", search, googleSearchPO.searchResultCount());
 	}
 }

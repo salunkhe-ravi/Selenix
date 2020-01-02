@@ -17,11 +17,19 @@
 		<cucumber.version>4.8.0</cucumber.version>
 		<selenium.version>3.141.59</selenium.version>
 		<sl4j.version>1.7.30</sl4j.version>
+		<extent.reports.version>1.0.8</extent.reports.version>
 		<maven.surefire.plugin.version>3.0.0-M4</maven.surefire.plugin.version>
 		<maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports-cucumber4-adapter</artifactId>
+			<version>${extent.reports.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>

@@ -6,8 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions (
 		monochrome = true,
 		features = "src/test/resources/features", 
-		plugin = {"pretty", "html:target/cucumber-html-report"},
-		glue = {"stepDefinitions"},
-		tags = "@regression"
+		plugin = {"pretty", "html:target/cucumber-html-report", 
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+		glue = {"stepDefinitions"}
+//		tags = "@regression"
 		)
 public class MainRunnerTest extends AbstractTestNGCucumberParallelTests {}

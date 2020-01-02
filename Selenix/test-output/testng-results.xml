@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="378195" started-at="2020-01-01T06:20:41Z" finished-at="2020-01-01T06:27:00Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runners.CukesRunnerTest@1cbbffcd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="378195" started-at="2020-01-01T06:20:41Z" finished-at="2020-01-01T06:27:00Z">
+      <class name="runners.CukesRunnerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.CukesRunnerTest@1cbbffcd]" name="setUpClass" is-config="true" duration-ms="156" started-at="2020-01-01T06:20:41Z" finished-at="2020-01-01T06:20:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runners.CukesRunnerTest@1cbbffcd]" name="runScenario" duration-ms="260645" started-at="2020-01-01T06:20:45Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-01-01T06:25:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cucumber"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["sample feature1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runners.CukesRunnerTest@1cbbffcd]" name="runScenario" duration-ms="61508" started-at="2020-01-01T06:25:05Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-01-01T06:26:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Selenium"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["sample feature1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runners.CukesRunnerTest@1cbbffcd]" name="runScenario" duration-ms="52760" started-at="2020-01-01T06:26:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-01-01T06:26:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Eclipse"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.CukesRunnerTest@1cbbffcd]" name="tearDownClass" is-config="true" duration-ms="61" started-at="2020-01-01T06:26:59Z" finished-at="2020-01-01T06:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.CukesRunnerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

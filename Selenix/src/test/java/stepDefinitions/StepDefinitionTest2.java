@@ -1,11 +1,9 @@
 package stepDefinitions;
 
 
-
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
 import drivers.SharedDriver;
-
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 import pageObjects.GoogleHomePO;
 import pageObjects.GoogleSearchPO;
 

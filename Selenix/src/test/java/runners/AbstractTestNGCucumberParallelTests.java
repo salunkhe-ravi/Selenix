@@ -2,10 +2,7 @@ package runners;
 
 
 import org.testng.annotations.DataProvider;
-
-import cucumber.api.testng.AbstractTestNGCucumberTests;
-
-
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 
 

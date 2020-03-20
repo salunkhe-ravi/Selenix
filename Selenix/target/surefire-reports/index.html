@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runners.MainRunnerTest" hash-for-method="runScenario(&quot;Cucumber&quot;, &quot;sample feature1&quot;)">runScenario("Cucumber", "sample feature1")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runners.MainRunnerTest" hash-for-method="runScenario(&quot;Eclipse&quot;, &quot;sample feature2&quot;)">runScenario("Eclipse", "sample feature2")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runners.MainRunnerTest" hash-for-method="runScenario(&quot;Eclipse&quot;, &quot;sample feature2&quot;)">runScenario("Eclipse", "sample feature2")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runners.MainRunnerTest" hash-for-method="runScenario(&quot;Cucumber&quot;, &quot;sample feature1&quot;)">runScenario("Cucumber", "sample feature1")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -130,28 +130,36 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Cucumber&quot;, &quot;sample feature1&quot;)">
-                  </a> <!-- runScenario("Cucumber", "sample feature1") -->
+                  <a name="runScenario(&quot;Eclipse&quot;, &quot;sample feature2&quot;)">
+                  </a> <!-- runScenario("Eclipse", "sample feature2") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Cucumber", "sample feature1")</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.updateResult(ExtentCucumberAdapter.java:202)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestStepFinished(ExtentCucumberAdapter.java:177)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$3(ExtentCucumberAdapter.java:176)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$5.receive(ExtentCucumberAdapter.java:108)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$5.receive(ExtentCucumberAdapter.java:1)
-	at cucumber.runner.AbstractEventPublisher.send(AbstractEventPublisher.java:45)
-	at cucumber.runner.AbstractEventBus.send(AbstractEventBus.java:9)
-	at cucumber.runner.TimeServiceEventBus.send(TimeServiceEventBus.java:3)
-	at cucumber.runner.ThreadLocalRunnerSupplier$SynchronizedEventBus.send(ThreadLocalRunnerSupplier.java:93)
-	at cucumber.runner.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:61)
-	at cucumber.runner.TestStep.run(TestStep.java:59)
-	at cucumber.runner.TestCase.run(TestCase.java:42)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:24)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:27)
-... Removed 29 stack frames
+                  <span class="parameters">("Eclipse", "sample feature2")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[id=&apos;resultStats&apos;]&quot;}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-MH1LPW101177&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_232&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\RAVI14~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fefa35a7ec12d7da1413845776029184
+*** Element info: {Using=css selector, value=div[id=&apos;resultStats&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.getText(Unknown Source)
+	at pageObjects.GoogleSearchPO.searchResultCount(GoogleSearchPO.java:21)
+	at stepDefinitions.StepDefinitionTest2.when(StepDefinitionTest2.java:30)
+	at ✽.Enter search1 &quot;eclipse&quot;(file:src/test/resources/features/search/feat2.feature:7)
+... Removed 4 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -159,28 +167,36 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Eclipse&quot;, &quot;sample feature2&quot;)">
-                  </a> <!-- runScenario("Eclipse", "sample feature2") -->
+                  <a name="runScenario(&quot;Cucumber&quot;, &quot;sample feature1&quot;)">
+                  </a> <!-- runScenario("Cucumber", "sample feature1") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Eclipse", "sample feature2")</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.updateResult(ExtentCucumberAdapter.java:202)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestStepFinished(ExtentCucumberAdapter.java:177)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$3(ExtentCucumberAdapter.java:176)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$5.receive(ExtentCucumberAdapter.java:108)
-	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$5.receive(ExtentCucumberAdapter.java:1)
-	at cucumber.runner.AbstractEventPublisher.send(AbstractEventPublisher.java:45)
-	at cucumber.runner.AbstractEventBus.send(AbstractEventBus.java:9)
-	at cucumber.runner.TimeServiceEventBus.send(TimeServiceEventBus.java:3)
-	at cucumber.runner.ThreadLocalRunnerSupplier$SynchronizedEventBus.send(ThreadLocalRunnerSupplier.java:93)
-	at cucumber.runner.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:61)
-	at cucumber.runner.TestStep.run(TestStep.java:59)
-	at cucumber.runner.TestCase.run(TestCase.java:42)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:24)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:27)
-... Removed 29 stack frames
+                  <span class="parameters">("Cucumber", "sample feature1")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[id=&apos;resultStats&apos;]&quot;}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-MH1LPW101177&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_232&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\RAVI14~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fefa35a7ec12d7da1413845776029184
+*** Element info: {Using=css selector, value=div[id=&apos;resultStats&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.getText(Unknown Source)
+	at pageObjects.GoogleSearchPO.searchResultCount(GoogleSearchPO.java:21)
+	at stepDefinitions.StepDefinitionTest.when(StepDefinitionTest.java:30)
+	at ✽.Enter search &quot;cucumber&quot;(file:src/test/resources/features/payments/feat1.feature:7)
+... Removed 4 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -258,16 +274,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.MainRunnerTest')
-data.setCell(0, 3, 412);
+data.setCell(0, 3, 39648);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.MainRunnerTest')
-data.setCell(1, 3, 6);
+data.setCell(1, 3, 24766);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 418 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -302,17 +318,17 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Cucumber", "sample feature1")</span>
-                <span class="method-start">696 ms</span>
+                <span class="method-start">694 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Eclipse", "sample feature2")</span>
-                <span class="method-start">1124 ms</span>
+                <span class="method-start">40369 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">1131 ms</span>
+                <span class="method-start">65136 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

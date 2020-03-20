@@ -1,6 +1,6 @@
 package runners;
 
-import cucumber.api.CucumberOptions;
+import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions (

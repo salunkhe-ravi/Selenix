@@ -17,7 +17,7 @@
 		<cucumber.version>4.8.0</cucumber.version>
 		<selenium.version>3.141.59</selenium.version>
 		<sl4j.version>1.7.30</sl4j.version>
-		<extent.reports.version>1.0.8</extent.reports.version>
+		<extent.reports.version>1.0.11-SNAPSHOT</extent.reports.version>
 		<webdriver.manager.version>3.8.1</webdriver.manager.version>
 		<freemarker.version>2.3.30</freemarker.version>
 		<mssql.jdbc.version>8.2.1.jre8</mssql.jdbc.version>
@@ -44,7 +44,7 @@
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports-cucumber4-adapter</artifactId>
-			<version>1.0.11-SNAPSHOT</version>
+			<version>${extent.reports.version}</version>
 		</dependency>
 
 

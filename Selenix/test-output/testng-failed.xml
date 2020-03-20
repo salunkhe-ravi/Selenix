@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Selenix(failed)">
+    <classes>
+      <class name="runners.MainRunnerTest">
+        <methods>
+          <include name="runScenario" invocation-numbers="0 1 2 3"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- runners.MainRunnerTest -->
+    </classes>
+  </test> <!-- Selenix(failed) -->
+</suite> <!-- Failed suite [Suite] -->

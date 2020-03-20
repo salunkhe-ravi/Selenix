@@ -1,5 +1,13 @@
 
 
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +17,9 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
 	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
 	
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
 	
 	<title>Selenix - Extent Reports</title>
 
@@ -49,7 +57,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 2, 2020 06:02:42 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 20, 2020 12:50:45 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -76,10 +84,9 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@payments</a></li>
+					<li><a href='#'>@all</a></li>
 					<li><a href='#'>@smoke</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@search</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -123,7 +130,7 @@
                     <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -134,24 +141,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
-                </div>
-            </div>
-        </div>
-        <div class='col s12 m4 l4 np-h'>
-            <div class='card-panel nm-v'>
-                <div class='left panel-name'>Steps</div>
-                <div class='chart-box' style="max-height:94px;">
-                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
-                </div>
-                <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> step(s) passed</span>
-                </div>
-                <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -172,143 +167,51 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>sample feature1</span>
-						<span class='test-time'>Jan 2, 2020 06:02:43 PM</span>
+						<span class='test-time'>Mar 20, 2020 12:50:46 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
-    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 <div class='scenario node' test-id='2' status='pass'>
-    <div class='category-list'>
-        <span class='category label'>@payments</span>
-        <span class='category label'>@smoke</span>
-        <span class='category label'>@regression</span>
-    </div>
-    <span class='duration right label'>0h 0m 15s+380ms</span>
-    <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Cucumber</div>
-    </div>
-    <ul class='steps'>
-        <li test-id='3' class='node asterisk pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Hooks.openbrowser()</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='4' class='node given pass' status='pass'>
-            <div class="step-name" title="StepDefinitionTest.given()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Go to google page</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='5' class='node when pass' status='pass'>
-            <div class="step-name" title="StepDefinitionTest.when(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter search "cucumber"</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='6' class='node asterisk pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Hooks.closebrowser()</div>
-                <div class="node-step"></div>
-        </li>
-    </ul>
-</div>
-<div class='scenario node' test-id='7' status='pass'>
-    <div class='category-list'>
-        <span class='category label'>@payments</span>
-        <span class='category label'>@smoke</span>
-    </div>
-    <span class='duration right label'>0h 0m 6s+857ms</span>
-    <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Selenium</div>
-    </div>
-    <ul class='steps'>
-        <li test-id='8' class='node asterisk pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Hooks.openbrowser()</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='9' class='node given pass' status='pass'>
-            <div class="step-name" title="StepDefinitionTest.given()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Go to google page</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='10' class='node when pass' status='pass'>
-            <div class="step-name" title="StepDefinitionTest.when(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter search "selenium"</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='11' class='node asterisk pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Hooks.closebrowser()</div>
-                <div class="node-step"></div>
-        </li>
-    </ul>
+	<div class='category-list'>
+		<span class='category label'>@all</span>
+		<span class='category label'>@smoke</span>
+		<span class='category label'>@regression</span>
+	</div>
+	<span class='duration right label'>0h 0m 0s+0ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Cucumber</div>
+	</div>
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='12'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>sample feature2</span>
-						<span class='test-time'>Jan 2, 2020 06:03:05 PM</span>
+						<span class='test-time'>Mar 20, 2020 12:50:46 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
-    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='13' status='pass'>
-    <div class='category-list'>
-        <span class='category label'>@search</span>
-        <span class='category label'>@smoke</span>
-    </div>
-    <span class='duration right label'>0h 0m 3s+952ms</span>
-    <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Eclipse</div>
-    </div>
-    <ul class='steps'>
-        <li test-id='14' class='node asterisk pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Hooks.openbrowser()</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='15' class='node given pass' status='pass'>
-            <div class="step-name" title="StepDefinitionTest.given()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Go to google page</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='16' class='node when pass' status='pass'>
-            <div class="step-name" title="StepDefinitionTest.when(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter search "eclipse"</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='17' class='node asterisk pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Hooks.closebrowser()</div>
-                <div class="node-step"></div>
-        </li>
-    </ul>
-</div>
-<div class='scenario node' test-id='18' status='pass'>
-    <div class='category-list'>
-        <span class='category label'>@search</span>
-        <span class='category label'>@smoke</span>
-    </div>
-    <span class='duration right label'>0h 0m 2s+657ms</span>
-    <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Sachin Tendulkar</div>
-    </div>
-    <ul class='steps'>
-        <li test-id='19' class='node asterisk pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Hooks.openbrowser()</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='20' class='node given pass' status='pass'>
-            <div class="step-name" title="StepDefinitionTest.given()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Go to google page</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='21' class='node when pass' status='pass'>
-            <div class="step-name" title="StepDefinitionTest.when(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter search "Sachin Tendulkar"</div>
-                <div class="node-step"></div>
-        </li>
-        <li test-id='22' class='node asterisk pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Hooks.closebrowser()</div>
-                <div class="node-step"></div>
-        </li>
-    </ul>
+<div class='scenario node' test-id='4' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>@all</span>
+		<span class='category label'>@smoke</span>
+	</div>
+	<span class='duration right label'>0h 0m 0s+0ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Eclipse</div>
+	</div>
 </div>
 					</div>
 				</li>
@@ -352,50 +255,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@payments</span>
-						<span class='category-status right'>
-						<span class='label pass'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 2, 2020 06:02:43 PM</td>
-										<td class='linked' test-id='1'>sample feature1</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 2, 2020 06:02:43 PM</td>
-										<td class='linked' test-id='2'>sample feature1.Cucumber</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 2, 2020 06:02:58 PM</td>
-										<td class='linked' test-id='7'>sample feature1.Selenium</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@all</span>
 						<span class='category-status right'>
 						<span class='label pass'>4</span>
 						</span>
@@ -417,23 +277,61 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 2, 2020 06:02:43 PM</td>
-										<td class='linked' test-id='2'>sample feature1.Cucumber</td>
+										<td>Mar 20, 2020 12:50:46 PM</td>
+										<td class='linked' test-id='1'>sample feature1</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 2, 2020 06:02:58 PM</td>
-										<td class='linked' test-id='7'>sample feature1.Selenium</td>
+										<td>Mar 20, 2020 12:50:46 PM</td>
+										<td class='linked' test-id='2'>Cucumber</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 2, 2020 06:03:05 PM</td>
-										<td class='linked' test-id='13'>sample feature2.Eclipse</td>
+										<td>Mar 20, 2020 12:50:46 PM</td>
+										<td class='linked' test-id='3'>sample feature2</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 2, 2020 06:03:09 PM</td>
-										<td class='linked' test-id='18'>sample feature2.Sachin Tendulkar</td>
+										<td>Mar 20, 2020 12:50:46 PM</td>
+										<td class='linked' test-id='4'>Eclipse</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@smoke</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 20, 2020 12:50:46 PM</td>
+										<td class='linked' test-id='2'>Cucumber</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 20, 2020 12:50:46 PM</td>
+										<td class='linked' test-id='4'>Eclipse</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -465,51 +363,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 2, 2020 06:02:43 PM</td>
-										<td class='linked' test-id='2'>sample feature1.Cucumber</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@search</span>
-						<span class='category-status right'>
-						<span class='label pass'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 2, 2020 06:03:05 PM</td>
-										<td class='linked' test-id='12'>sample feature2</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 2, 2020 06:03:05 PM</td>
-										<td class='linked' test-id='13'>sample feature2.Eclipse</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 2, 2020 06:03:09 PM</td>
-										<td class='linked' test-id='18'>sample feature2.Sachin Tendulkar</td>
+										<td>Mar 20, 2020 12:50:46 PM</td>
+										<td class='linked' test-id='2'>Cucumber</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -540,31 +395,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>0</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 2, 2020 06:02:42 PM</div>
+					<div class='panel-lead'>Mar 20, 2020 12:50:45 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 2, 2020 06:03:12 PM</div>
+			 		<div class='panel-lead'>Mar 20, 2020 12:50:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 29s+123ms</div>
+					<div class='panel-lead'>0h 0m 0s+931ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -576,12 +431,12 @@
 							<th>Name</th>
 							<th>Passed</th>
 							<th>Failed</th>
-							<th>Others</th>
+							<th>Skipped</th>
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@payments</td>
-							<td>3</td>
+							<td>@all</td>
+							<td>4</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -590,7 +445,7 @@
 						</tr>
 						<tr>
 							<td>@smoke</td>
-							<td>4</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -600,15 +455,6 @@
 						<tr>
 							<td>@regression</td>
 							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@search</td>
-							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -634,8 +480,8 @@
 				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 0,
-				childCount: 4,
-				passChild: 4,
+				childCount: 2,
+				passChild: 2,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -644,8 +490,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 16,
-				passGrandChild: 16,
+				grandChildCount: 0,
+				passGrandChild: 0,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -658,10 +504,11 @@
 		</script>
 		<script>
 			var timeline = {
-			        "sample feature1":22.24,"sample feature2":6.611
+			        "sample feature1":0,"sample feature2":0
 			};
 		</script>
-		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+	
+		  <script src='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
 		<script type='text/javascript'>
 			
 

@@ -1,9 +1,14 @@
 pageObjects\GoogleHomePO.class
 drivers\SharedDriver.class
+runners\Test.class
 drivers\DriverFactory.class
 drivers\DriverFactory$1.class
 runners\MainRunnerTest.class
+helpers\Constants.class
 stepDefinitions\Hooks.class
+runners\Singleton.class
+helpers\ConfigFileReader.class
 pageObjects\GoogleSearchPO.class
 runners\AbstractTestNGCucumberParallelTests.class
 stepDefinitions\StepDefinitionTest.class
+stepDefinitions\StepDefinitionTest2.class

@@ -1,8 +1,13 @@
-D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\stepDefinitions\Hooks.java
-D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\drivers\DriverFactory.java
+D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\helpers\Constants.java
 D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\pageObjects\GoogleHomePO.java
 D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\drivers\SharedDriver.java
+D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\runners\Test.java
 D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\runners\MainRunnerTest.java
 D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\stepDefinitions\StepDefinitionTest.java
-D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\pageObjects\GoogleSearchPO.java
 D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\runners\AbstractTestNGCucumberParallelTests.java
+D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\stepDefinitions\Hooks.java
+D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\drivers\DriverFactory.java
+D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\runners\Singleton.java
+D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\stepDefinitions\StepDefinitionTest2.java
+D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\helpers\ConfigFileReader.java
+D:\Eclipse\SelenixGitRepo\Selenix\src\test\java\pageObjects\GoogleSearchPO.java

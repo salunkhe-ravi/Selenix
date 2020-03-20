@@ -1,4 +1,4 @@
-@payments
+@all
 Feature: sample feature1
 
 	@smoke @regression
@@ -6,8 +6,5 @@ Feature: sample feature1
     Given Go to google page
     When Enter search "cucumber"
     
-	@smoke
-  Scenario: Selenium
-    Given Go to google page
-    When Enter search "selenium"
+
     

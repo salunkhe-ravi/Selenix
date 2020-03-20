@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,36 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runners.MainRunnerTest" hash-for-method="runScenario(&quot;Selenium&quot;, &quot;sample feature1&quot;)">runScenario("Selenium", "sample feature1")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runners.MainRunnerTest" hash-for-method="runScenario(&quot;Cucumber&quot;, &quot;sample feature1&quot;)">runScenario("Cucumber", "sample feature1")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runners.MainRunnerTest" hash-for-method="runScenario(&quot;Eclipse&quot;, &quot;sample feature2&quot;)">runScenario("Eclipse", "sample feature2")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="runners.MainRunnerTest" hash-for-method="runScenario(&quot;Sachin Tendulkar&quot;, &quot;sample feature2&quot;)">runScenario("Sachin Tendulkar", "sample feature2")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,28 +122,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">runners.MainRunnerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Selenium&quot;, &quot;sample feature1&quot;)">
-                  </a> <!-- runScenario("Selenium", "sample feature1") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Selenium", "sample feature1")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Cucumber&quot;, &quot;sample feature1&quot;)">
                   </a> <!-- runScenario("Cucumber", "sample feature1") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Cucumber", "sample feature1")</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.updateResult(ExtentCucumberAdapter.java:202)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestStepFinished(ExtentCucumberAdapter.java:177)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$3(ExtentCucumberAdapter.java:176)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$5.receive(ExtentCucumberAdapter.java:108)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$5.receive(ExtentCucumberAdapter.java:1)
+	at cucumber.runner.AbstractEventPublisher.send(AbstractEventPublisher.java:45)
+	at cucumber.runner.AbstractEventBus.send(AbstractEventBus.java:9)
+	at cucumber.runner.TimeServiceEventBus.send(TimeServiceEventBus.java:3)
+	at cucumber.runner.ThreadLocalRunnerSupplier$SynchronizedEventBus.send(ThreadLocalRunnerSupplier.java:93)
+	at cucumber.runner.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:61)
+	at cucumber.runner.TestStep.run(TestStep.java:59)
+	at cucumber.runner.TestCase.run(TestCase.java:42)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:24)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:27)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -164,22 +163,31 @@
                   </a> <!-- runScenario("Eclipse", "sample feature2") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Eclipse", "sample feature2")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Sachin Tendulkar&quot;, &quot;sample feature2&quot;)">
-                  </a> <!-- runScenario("Sachin Tendulkar", "sample feature2") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Sachin Tendulkar", "sample feature2")</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.updateResult(ExtentCucumberAdapter.java:202)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.handleTestStepFinished(ExtentCucumberAdapter.java:177)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter.access$3(ExtentCucumberAdapter.java:176)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$5.receive(ExtentCucumberAdapter.java:108)
+	at com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter$5.receive(ExtentCucumberAdapter.java:1)
+	at cucumber.runner.AbstractEventPublisher.send(AbstractEventPublisher.java:45)
+	at cucumber.runner.AbstractEventBus.send(AbstractEventBus.java:9)
+	at cucumber.runner.TimeServiceEventBus.send(TimeServiceEventBus.java:3)
+	at cucumber.runner.ThreadLocalRunnerSupplier$SynchronizedEventBus.send(ThreadLocalRunnerSupplier.java:93)
+	at cucumber.runner.ThreadLocalRunnerSupplier$LocalEventBus.send(ThreadLocalRunnerSupplier.java:61)
+	at cucumber.runner.TestStep.run(TestStep.java:59)
+	at cucumber.runner.TestCase.run(TestCase.java:42)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:79)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:24)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:27)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -197,6 +205,8 @@
     &lt;classes&gt;
       &lt;class name=&quot;runners.AbstractTestNGCucumberParallelTests&quot;/&gt;
       &lt;class name=&quot;runners.MainRunnerTest&quot;/&gt;
+      &lt;class name=&quot;runners.Singleton&quot;/&gt;
+      &lt;class name=&quot;runners.Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Selenix --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -210,7 +220,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Selenix (2 classes)</span>
+                <span class="test-name">Selenix (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,28 +254,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.MainRunnerTest')
-data.setCell(0, 3, 15784);
+data.setCell(0, 3, 412);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.MainRunnerTest')
-data.setCell(1, 3, 6860);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'runners.MainRunnerTest')
-data.setCell(2, 3, 3954);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'runners.MainRunnerTest')
-data.setCell(3, 3, 2659);
+data.setCell(1, 3, 6);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 418 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -297,24 +299,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Cucumber", "sample feature1")</span>
-                <span class="method-start">218 ms</span>
+                <span class="method-start">696 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Selenium", "sample feature1")</span>
-                <span class="method-start">16003 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Eclipse", "sample feature2")</span>
-                <span class="method-start">22863 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("Sachin Tendulkar", "sample feature2")</span>
-                <span class="method-start">26817 ms</span>
+                <span class="method-start">1124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">29476 ms</span>
+                <span class="method-start">1131 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

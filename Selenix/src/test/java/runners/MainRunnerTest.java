@@ -1,14 +1,17 @@
 package runners;
 
-import io.cucumber.testng.CucumberOptions;
+import cucumber.api.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions (
 		monochrome = true,
 		features = "src/test/resources/features", 
-		plugin = {"pretty", "html:target/cucumber-html-report", 
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		glue = {"stepDefinitions"}
-//		tags = "@regression"
+		//		tags = tagsList
 		)
-public class MainRunnerTest extends AbstractTestNGCucumberParallelTests {}
+public class MainRunnerTest extends AbstractTestNGCucumberParallelTests {
+
+//	com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
+
+}

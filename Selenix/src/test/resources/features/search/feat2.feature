@@ -1,12 +1,9 @@
-@search
+@all
 Feature: sample feature2
 
 	@smoke
   Scenario: Eclipse
-    Given Go to google page
-    When Enter search "eclipse"
+    Given Go to google page1
+    When Enter search1 "eclipse"
 
-	@smoke
-  Scenario: Sachin Tendulkar
-    Given Go to google page
-    When Enter search "Sachin Tendulkar"    
+  

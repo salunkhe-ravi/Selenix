@@ -1,9 +1,12 @@
 package stepDefinitions;
 
 
+
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
 import drivers.SharedDriver;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
+
 import pageObjects.GoogleHomePO;
 import pageObjects.GoogleSearchPO;
 
@@ -12,6 +15,7 @@ public class StepDefinitionTest {
 
 	private GoogleHomePO googleHomePO;
 	private GoogleSearchPO googleSearchPO;
+	
 	
 	public StepDefinitionTest(SharedDriver driver, GoogleHomePO ghPO, GoogleSearchPO gsPO) {
 		this.googleHomePO = ghPO;

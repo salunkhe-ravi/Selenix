@@ -27,6 +27,6 @@ public class GoogleSearchPO extends LoadableComponent<GoogleSearchPO>{
 
 	@Override
 	protected void isLoaded() throws Error {
-
+//put assertions
 	}
 }
